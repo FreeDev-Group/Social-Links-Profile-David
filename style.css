@@ -1,4 +1,88 @@
- <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+:root {
+  /* COLORS */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--grey-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CARD */
+.card {
+  background-color: var(--grey-800);
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 88px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+h1 {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h2 {
+  color: var(--green);
+  font-size: 14px;
+  margin: 8px 0 20px;
+}
+
+p {
+  color: var(--white);
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* LINKS */
+.links a {
+  display: block;
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* HOVER */
+.links a:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
+
+/* RESPONSIVE DESKTOP */
+@media (min-width: 768px) {
+  .card {
+    padding: 32px;
+    max-width: 380px;
+  }
+}
