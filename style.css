@@ -7,6 +7,7 @@
   --grey-900: hsl(0, 0%, 8%);
 }
 
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -74,29 +75,37 @@ p {
   transition: all 0.3s ease;
 }
 
-/* HOVER */
+/* HOVER EFFECTS */
 .links a:hover {
   background-color: var(--green);
   color: var(--grey-900);
   transform: scale(1.1);
-  transition: 0.3s ease;
   filter: brightness(1.2);
 }
 
-/* RESPONSIVE DESKTOP */
+/* RESPONSIVE */
 @media (min-width: 768px) {
   .card {
     padding: 32px;
     max-width: 380px;
   }
 }
+
 @media (max-width: 768px) {
-  .profile-card {
+  .card {
     width: 90%;
     text-align: center;
   }
 }
+
+/* ANIMATION */
 @keyframes fadeIn {
-  from {opacity: 0; transform: translateY(10px);}
-  to {opacity: 1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
