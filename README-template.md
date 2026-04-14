@@ -85,7 +85,7 @@ This helped me work faster and produce a more polished result.
 /style/            # CSS, images, icons  
 README.md          # Project documentation 
 
-## Author
-GitHub: @David-max-tech
-LinkedIn: David Mumeme
+##  Author
 
+- Frontend Mentor - https://www.frontendmentor.io/profile/David-max-tech
+- GitHub - https://github.com/David-max-tech
